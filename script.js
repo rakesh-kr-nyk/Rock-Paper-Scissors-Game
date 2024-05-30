@@ -6,13 +6,18 @@ let winner = document.querySelector(".winner")
 let playerScore = document.querySelector(".player-score")
 let computerScore = document.querySelector(".computer-score")
 let player = document.querySelector(".player")
-let computer =document.querySelector(".computer")
+let computer = document.querySelector(".computer")
+
 
 const getComChoice = () => {
     const options = ["rock", "paper", "scissors"];
     const randIdx = Math.floor(Math.random() * 3);
     return options[randIdx];
 };
+
+function refreshPage() {
+    window.location.reload();
+} 
 
 const drawGame = () => {
     winner.innerHTML = "Game was draw!";

@@ -14,12 +14,13 @@
     <div class="game-name">ROCK PAPER SCISSORS</div>
     <div class="game-box">
         <p class="winner">Winner Name</p>
+        <p class="beats"></p>
         <div class="vs">
-            <div>
+            <div class="p-img">
                 <img class="player" src="assets/paper.png" alt="player">
                 <p >Your Choice!</p>
             </div >
-            <div>
+            <div class="c-img">
                 <img class="computer" src="assets/rock.png" alt="computer">
                 <p >Computer Choice!</p>
             </div>
@@ -35,10 +36,11 @@
             <div id="paper" class="choice"><img src="assets/paper.png" alt="Paper"><p>Paper</p></div>
             <div id="scissors" class="choice"><img src="assets/scissors.png" alt="Scissors"><p>Scissors</p></div>
         </div>
+        <button class="reset" type="button" onClick="refreshPage()">Reset Game!</button>
     </div>
 </div>
-</div>
 
+</div>
 <script src="script.js"></script>    
 </body>
 </html>
